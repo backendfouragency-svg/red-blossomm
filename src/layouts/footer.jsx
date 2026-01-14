@@ -121,20 +121,7 @@ const Footer = () => {
           </div>
             
           
-          <div className="flex justify-center items-center lg:hidden gap-3">
-            {socialInfo.map((iconInfo, _) => {
-              let Ico = iconInfo.icon;
-              return (
-                <a
-                  key={_}
-                  className="w-10 h-10 md:w-14  md:h-14 rounded-full bg-red flex-center border-1 border-red cursor-pointer group hover:bg-soft-white focus:bg-soft-white transition-all duration-550"
-                  href={iconInfo.url}
-                >
-                  <Ico className="text-white text-[1.25rem] md:text-[1.95rem] group-hover:text-red group-focus:text-red" />
-                </a>
-              );
-            })}
-          </div>
+        
         </div>
       </div>
 
@@ -160,23 +147,13 @@ const Footer = () => {
                   target="_blank"
                   className="text-white text-[.71rem] font-bold opacity-70"
                 >
-                  Victoria
+                  MaisonFour & Victoria
                 </a>
               </div>
               <div className="flex items-center gap-1">
                 <h2 className="text-white text-[.71rem] opacity-50">
                   {config.footer.copyright_developer}
-                </h2>
-                <a
-                  href="https://ahmedabdalalim.pages.dev/"
-                  target="_blank"
-                  className="w-[1.2rem] pt-1"
-                >
-                  <img
-                    src="https://raw.githubusercontent.com/ahmed-abd-alalim/ahmed-abd-alalim/main/assets/3A.png"
-                    alt="3A"
-                    width={"100%"}
-                  />
+                </h2>            
                 </a>
               </div>
             </div>
