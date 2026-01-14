@@ -77,7 +77,7 @@ const Footer = () => {
                 target="_blank"
                 className="text-red text-[.71rem] font-bold"
               >
-                Victoria
+                MaisonFour & Victoria
               </a>
             </div>
             <div className="flex items-center gap-1">
@@ -177,23 +177,14 @@ const Footer = () => {
                   target="_blank"
                   className="text-white text-[.71rem] font-bold opacity-70"
                 >
-                  Victoria
+                  MaisonFour
                 </a>
               </div>
               <div className="flex items-center gap-1">
                 <h2 className="text-white text-[.71rem] opacity-50">
                   {config.footer.copyright_developer}
                 </h2>
-                <a
-                  href="https://ahmedabdalalim.pages.dev/"
-                  target="_blank"
-                  className="w-[1.2rem] pt-1"
-                >
-                  <img
-                    src="https://raw.githubusercontent.com/ahmed-abd-alalim/ahmed-abd-alalim/main/assets/3A.png"
-                    alt="3A"
-                    width={"100%"}
-                  />
+                
                 </a>
               </div>
             </div>
