@@ -117,27 +117,10 @@ const Footer = () => {
                   utility
                 </Link>
               </li>
-              <li className="uppercase hover:text-dark-red focus:text-dark-red hover:opacity-80 focus:opacity-80 transition-all duration-500">
-                <Link to="faq" smooth={true}>
-                  faq
-                </Link>
-              </li>
             </ul>
           </div>
-          <div className="hidden lg:block">
-            <h4>messengers</h4>
-            <ul>
-              <li className="hover:text-dark-red hover:opacity-80 transition-all duration-500">
-                instagram
-              </li>
-              <li className="hover:text-dark-red hover:opacity-80 transition-all duration-500">
-                discord
-              </li>
-              <li className="hover:text-dark-red hover:opacity-80 transition-all duration-500">
-                twitter
-              </li>
-            </ul>
-          </div>
+            
+          
           <div className="flex justify-center items-center lg:hidden gap-3">
             {socialInfo.map((iconInfo, _) => {
               let Ico = iconInfo.icon;
