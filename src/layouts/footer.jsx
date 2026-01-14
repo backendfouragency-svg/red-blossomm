@@ -77,7 +77,7 @@ const Footer = () => {
                 target="_blank"
                 className="text-red text-[.71rem] font-bold"
               >
-                Victoria
+                MaisonFour & Victoria
               </a>
             </div>
             <div className="flex items-center gap-1">
@@ -117,11 +117,41 @@ const Footer = () => {
                   utility
                 </Link>
               </li>
+              <li className="uppercase hover:text-dark-red focus:text-dark-red hover:opacity-80 focus:opacity-80 transition-all duration-500">
+                <Link to="faq" smooth={true}>
+                  faq
+                </Link>
+              </li>
             </ul>
           </div>
-            
-          
-        
+          <div className="hidden lg:block">
+            <h4>messengers</h4>
+            <ul>
+              <li className="hover:text-dark-red hover:opacity-80 transition-all duration-500">
+                instagram
+              </li>
+              <li className="hover:text-dark-red hover:opacity-80 transition-all duration-500">
+                discord
+              </li>
+              <li className="hover:text-dark-red hover:opacity-80 transition-all duration-500">
+                twitter
+              </li>
+            </ul>
+          </div>
+          <div className="flex justify-center items-center lg:hidden gap-3">
+            {socialInfo.map((iconInfo, _) => {
+              let Ico = iconInfo.icon;
+              return (
+                <a
+                  key={_}
+                  className="w-10 h-10 md:w-14  md:h-14 rounded-full bg-red flex-center border-1 border-red cursor-pointer group hover:bg-soft-white focus:bg-soft-white transition-all duration-550"
+                  href={iconInfo.url}
+                >
+                  <Ico className="text-white text-[1.25rem] md:text-[1.95rem] group-hover:text-red group-focus:text-red" />
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -153,7 +183,7 @@ const Footer = () => {
               <div className="flex items-center gap-1">
                 <h2 className="text-white text-[.71rem] opacity-50">
                   {config.footer.copyright_developer}
-                </h2>            
+                </h2>
                 </a>
               </div>
             </div>
